@@ -6,7 +6,6 @@ import MenuComponent from './components/menu/MenuComponent.vue'
 <template>
   <header>
     <MenuComponent></MenuComponent>
-    <img src="../src/assets/logo.svg" alt="" srcset="" />
   </header>
 
   <RouterView />

@@ -19,7 +19,9 @@
           <option value="femenino">Femenino</option>
           <option value="otro">Otro</option>
         </select>
+        <br />
         <input
+          class="otroGenero"
           type="text"
           v-if="generoSeleccionado === 'otro'"
           v-model="otroGenero"
@@ -37,7 +39,7 @@ export default {
     return {
       nombre: '',
       apellido: '',
-      edad: 0,
+      edad: '',
       generoSeleccionado: 'masculino',
       otroGenero: '',
       formValid: false
@@ -81,6 +83,10 @@ form {
 .micro {
   background-color: #065959;
   padding: 2rem;
+}
+
+.otroGenero {
+  margin-top: 3px;
 }
 
 .edad {
